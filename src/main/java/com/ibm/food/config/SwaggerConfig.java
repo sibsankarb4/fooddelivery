@@ -32,7 +32,7 @@ public class SwaggerConfig {
         EmbeddedMongoFactoryBean mongo = new EmbeddedMongoFactoryBean();
         mongo.setBindIp("localhost");
         MongoClient mongoClient = mongo.getObject();
-        MongoTemplate mongoTemplate = new MongoTemplate(mongoClient, "accountdb");
+        MongoTemplate mongoTemplate = new MongoTemplate(mongoClient, "fooddb");
         return mongoTemplate;
     }
 }
