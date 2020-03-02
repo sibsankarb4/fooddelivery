@@ -14,7 +14,7 @@ public class FoodDeliveryApplication extends SpringBootServletInitializer {
 	
  	@Override
         protected SpringApplicationBuilder configure(SpringApplicationBuilder builder){
-			return builder.sources(SpringbootOpenshiftJBossEAPExampleApplication.class);
+			return builder.sources(FoodDeliveryApplication.class);
 		}
 
 }
