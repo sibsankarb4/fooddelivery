@@ -23,4 +23,9 @@ public class OrderApi {
     public void cancelOrder(@PathVariable(value = "orderId") Long orderId, @PathVariable(value="cancelMessage") String cancelMessage) {
         orderRepository.cancelOrder(orderId, cancelMessage);
     }
+    
+   @GetMapping("/info")
+	public String welcome() {
+		return "++++++++++++++++++++++++++++ Welcome to Spring Boot and MongoDB demo .++++++++++++++++++++++++++++ ";
+	}
 }
